@@ -5,3 +5,11 @@
 layout: home
 title: Welcome
 ---
+
+# Bienvenido a Bioinspired Creations
+
+Este es el espacio de **Bioinspired Creations**, donde compartimos proyectos y creaciones inspiradas en la naturaleza.
+
+## Últimas Publicaciones
+
+Explora nuestros últimos artículos y proyectos en la sección de posts.
