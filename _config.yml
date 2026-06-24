@@ -28,9 +28,9 @@ twitter_username: jekyllrb
 github_username: bioinspired-creations
 
 # Build settings
-remote_theme: pages-themes/dinky@v0.2.0
+theme: dinky
 plugins:
-- jekyll-remote-theme
+- jekyll-feed
 
 # Exclude from processing.
 # The following items will not be processed, by default.
