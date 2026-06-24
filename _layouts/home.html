@@ -1,0 +1,49 @@
+---
+layout: default
+---
+
+<section class="hero">
+  <h1>Bienvenido a {{ site.title }}</h1>
+  <p class="subtitle">{{ site.description }}</p>
+</section>
+
+<section class="featured-projects">
+  <h2>🚀 Proyectos Destacados</h2>
+  <div class="projects-grid">
+    <div class="project-card">
+      <h3>Biomimética Estructural</h3>
+      <p>Explorando cómo la naturaleza resuelve problemas de ingeniería. Desde panales hasta caparazones.</p>
+      <a href="/proyectos/#estructural">Ver más →</a>
+    </div>
+    <div class="project-card">
+      <h3>Algoritmos Naturales</h3>
+      <p>Implementación de algoritmos inspirados en procesos biológicos: colonias de hormigas, enjambres.</p>
+      <a href="/proyectos/#algoritmos">Ver más →</a>
+    </div>
+    <div class="project-card">
+      <h3>Materiales Inteligentes</h3>
+      <p>Investigación sobre materiales que aprenden de la naturaleza. Autorreparación y adaptación.</p>
+      <a href="/proyectos/#materiales">Ver más →</a>
+    </div>
+  </div>
+</section>
+
+<section class="latest-posts">
+  <h2>📝 Últimas Publicaciones</h2>
+  <ul class="post-list">
+    {% for post in site.posts limit:3 %}
+      <li>
+        <span class="date">{{ post.date | date: "%d/%m/%Y" }}</span>
+        <a href="{{ post.url }}">{{ post.title }}</a>
+        <p class="excerpt">{{ post.excerpt | strip_html | truncatewords: 15 }}</p>
+      </li>
+    {% endfor %}
+  </ul>
+  <p class="view-all"><a href="/blog/">Ver todas las publicaciones →</a></p>
+</section>
+
+<section class="cta">
+  <h2>¿Interesado en colaborar?</h2>
+  <p>Si tienes ideas sobre biomimética o proyectos inspirados en la naturaleza, me encantaría escucharte.</p>
+  <a href="mailto:{{ site.email }}" class="btn">Contáctame</a>
+</section>
